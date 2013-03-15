@@ -5,6 +5,19 @@
 	<title>ShowHide Example</title>
 	
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#hide-heading").click(function(){
+				$("#heading").hide(3000);
+			});
+			$("#show-heading").click(function(){
+				$("#heading").show(3000);
+			});
+			$("#toggle-heading").click(function(){
+				$("#heading").toggle(3000);
+			});
+		});
+	</script>
 	
 	<style media="screen">
 		ul { list-style: none; }	
